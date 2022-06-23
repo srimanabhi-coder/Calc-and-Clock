@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clock.css">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calcultor</title>
+</head>
+<body>
+    <div id="time">
+        <div class="circle" style="--clr:#ff2972">
+            <div class="dots hr_dot"></div>
+            <svg>
+                <circle cx="50", cy="50", r="50"> </circle>
+                <circle cx="50", cy="50", r="50" id="hh" > </circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+        <div class="circle" style="--clr:#fee800">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="50", cy="50", r="50"> </circle>
+                <circle cx="50", cy="50", r="50" id="mm"> </circle>
+            </svg>
+            <div id="minutes">00</div>
+        </div>
+        <div class="circle" style="--clr:green">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="50", cy="50", r="50"> </circle>
+                <circle cx="50", cy="50", r="50" id="ss"> </circle>
+            </svg>
+            <div id="seconds">00</div>
+        </div>
+        <div class="ap">
+            <div id="ampm">AM</div>
+        </div>
+    </div>
+    <div id ="calculator">
+        <div class="container">
+            <h1> Calculator </h1>
+            <div class="calculator">
+                <input type = "input" id="input" />
+                <table>
+                    <tr>
+                        <td><button id="mod">%</button></td>
+                        <td><button id="(">(</button></td>
+                        <td><button id=")">)</button></td>
+                        <td><button id="divide">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="block7">7</button></td>
+                        <td><button id="block8">8</button></td>
+                        <td><button id="block9">9</button></td>
+                        <td><button id="multiply">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="block4">4</button></td>
+                        <td><button id="block5">5</button></td>
+                        <td><button id="block6">6</button></td>
+                        <td><button id="minus">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="block3">3</button></td>
+                        <td><button id="block2">2</button></td>
+                        <td><button id="block1">1</button></td>
+                        <td><button id="plus">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="block0">0</button></td>
+                        <td><button id="dot">.</button></td>
+                        <td><button id="clr">C</button></td>
+                        <td><button id="ans">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
